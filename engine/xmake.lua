@@ -1,0 +1,5 @@
+target("tigerkin")
+    add_files("sources/tiger.cpp")
+    add_defines("TIGER_RUNTIME_SOURCE")
+    add_deps("luacore")
+    add_includedirs("include", {public=true})

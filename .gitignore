@@ -1,0 +1,70 @@
+# NOTE:
+#  Paths that start with / match paths relative to the root (where the .gitignore file is)
+#  Paths that end with / will match a folder and all files under it (but not a regular file with no extension)
+#  Use * for wildcards.  Wildcards stop at path separators
+#  Use ** for a wildcard that spans path separators
+#  Paths in this file should use forward slash characters, not back slashes
+#  Use \ to escape special characters like ! and #
+#  Use ! to negate a previous pattern.  But it doesn't work if the parent sub-folder was masked out already.
+
+# Ignore all files by default, but scan all directories.
+*
+!*/
+
+# Ignore vscode, vs  project directory
+.vscode
+.vs
+
+# Ignore Build directory
+/Build
+/.xmake
+/LocalData
+
+# scan cmake files.
+!CMakeLists.txt
+
+# source file
+!*.c
+!*.cpp
+!*.cc
+!*.inl
+!*.h
+!*.hpp
+!*.rc
+!*.m
+!*.mm
+!*.js
+!*.ts
+!*.py
+!*.lua
+
+# text file
+!*.md
+!*.txt
+!*.plist
+!.clang-format
+!*.bat
+!*.sh
+!*.json
+!**/README
+
+# git
+!.gitkeep
+!.gitignore
+!.gitattribute
+
+# resource file
+!*.ttf
+
+# shader file
+!*.frag
+!*.vert
+
+# build file
+!*.cmake
+!Makefile
+!tiger.ico
+Engine/Sources/Tiger/BuiltKey-*.h
+
+# External
+!Engine/Source/External/imgui/misc/debuggers/imgui.*
